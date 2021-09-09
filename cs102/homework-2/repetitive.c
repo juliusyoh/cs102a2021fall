@@ -7,10 +7,13 @@ int main( int argc, char **argv )
 int i;
 int x;
 
+<<<<<<< HEAD
 fprintf( stdout, "Julius Yoh\n" );
 fprintf( stdout, "Homework 2\n" );
 fprintf( stdout, "CS102E\n" );
 
+=======
+>>>>>>> 24c2065 (Repetitive program - Homework 3/4)
 for ( i = 0; i < 50; i = i + 1 )
 
 {
