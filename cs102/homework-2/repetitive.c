@@ -7,6 +7,10 @@ int main( int argc, char **argv )
 int i;
 int x;
 
+fprintf( stdout, "Julius Yoh\n" );
+fprintf( stdout, "Homework 2\n" );
+fprintf( stdout, "CS102E\n" );
+
 for ( i = 0; i < 50; i = i + 1 )
 
 {
