@@ -5,16 +5,16 @@
  * October 4, 2021
  */
 
-/* These fill the matrices through functions /*
+/* These fill the matrices through functions */
 
 void fill8x12 (int matrix1[8][12] );
 void fill12x8 (int matrix2[12][8] );
 
-*/ This cross multiply the matrices /*
+/* This cross multiply the matrices */
 
 void cross (int matrix1[8][12], int matrix2[12][8], int matrix3[12][12] );
 
-/* These print the matrices through functions /*
+/* These print the matrices through functions */
 
 void print8x12 (int matrix1[8][12] );
 void print12x8 (int matrix2[12][8] );
