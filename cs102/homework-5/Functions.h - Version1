@@ -1,0 +1,14 @@
+/*
+ * Julius Yoh
+ * CS102 Fall 2021
+ * Homework 5 - Functions.h Version1 where only Matrices are generated.
+ * October 4, 2021
+ */
+
+void fill8x12 (int matrix1[8][12] );
+void fill12x8 (int matrix2[12][8] );
+void cross (int matrix1[8][12], int matrix2[12][8], int matrix3[12][12] );
+void print8x12 (int matrix1[8][12] );
+void print12x8 (int matrix2[12][8] );
+void print12x12 (int matrix3[12][12] );
+
