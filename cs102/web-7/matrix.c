@@ -1,9 +1,9 @@
-*
- * Julius Yoh
- * CS102 Fall 2021
- * Homework 7 - Matrix.c - Final Version
- * October 13, 2021
- */
+ /*
+  * Julius Yoh
+  * CS102 Fall 2021
+  * Homework 7 - Matrix.c - Final Version
+  * October 13, 2021
+  */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,6 +21,12 @@ fprintf(stdout,"<title>Matrix</title>");
 fprintf(stdout,"</head>");
 fprintf(stdout,"<body>");
 fprintf(stdout,"<table>");
+
+        fprintf(stdout, "<h1>Julius Yoh</h1>");
+        fprintf(stdout, "<h1>CS102 Fall 2021</h1>");
+        fprintf(stdout, "<h1>Homework 7 - Matrix.c - Final Version</h1>");
+        fprintf(stdout, "<h1>October 13, 2021</h1>");
+
 
         int matrix1 [12][8];
         int matrix2 [8][12];
@@ -40,12 +46,12 @@ fprintf(stdout,"<table>");
         print12x8(matrix1);
 
 /* New Line Between The Matrices */
-
-        fprintf(stdout, "\n" );
+       fprintf(stdout, "\n" );
 
        fprintf(stdout, "<h1>Matrix 2:</h1>");
         fprintf(stdout, "\n" );
         print8x12(matrix2);
+
 /* New Line Between The Matrix 2 and Product Matrix */
 
  fprintf(stdout, "\n" );
