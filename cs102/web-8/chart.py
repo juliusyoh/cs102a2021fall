@@ -4,7 +4,7 @@
 #CS102Fall2021
 #Homework 8 - chart.py
 #October 25, 2021
-#050668
+
 
 import cgi
 import cgitb
@@ -53,3 +53,24 @@ def fint(x):
         return((((a * x * x * x) - (b * x * x) + c * x) + ((a * (x-5)*(x-5)*(x-5)) - (b * (x-5)*(x-5)) + c * (x-5)))/2)*5 
 
 #This establishes the functions
+
+if "A" in form:
+        while x < 101:
+                y = f(x)
+                yprime = fprime(x)
+                yint = fint(x)
+                ysum = ysum + yint
+                if x%2 == 1:
+                        print ("""<tr class = "a"><td>%s</td> <td>%s</td> <td>%s</td> <td>%s</td>"""% (x,y,yprime,ysum))
+                if x%2 == 0:
+                        print ("""<tr class = "b"><td>%s</td> <td>%s</td> <td>%s</td> <td>%s</td>"""% (x,y,yprime,ysum))
+                x = x + 5
+
+
+
+print ("""
+</table>
+</body>
+</html>
+""")
+
