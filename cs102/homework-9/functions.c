@@ -58,7 +58,7 @@ int print_file( char*filename)
                 fprintf(stdout, "%s: %d lines %d words %d bytes \n", filename, n, t, s);
                 fclose(file);
         }
-
+return 0;
 }
 
 
