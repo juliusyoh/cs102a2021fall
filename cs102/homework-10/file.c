@@ -57,6 +57,9 @@ void save(char* filename)
             if (is_wall(x,y) == 1){
             fprintf(file, "WALL %d %d \n", x, y );
 				}
+	    if (is_treasure(x,y) == 1){
+            fprintf(file, "TREASURE %d %d \n", x, y );
+            }
             }
     }
    fprintf(file, "X %d\n", get_location_x()); 
