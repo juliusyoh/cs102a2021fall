@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include "functionss.h"
+#include "functions.h"
 int main(int argc, char**argv)
         {
         int matrix1 [12][8];
