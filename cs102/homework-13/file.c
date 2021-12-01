@@ -37,6 +37,10 @@ void load(char* filename)
 		  {
 			set_treasure(x, y);
 		  }
+		  if ( sscanf(scratchpad, "MONSTER %d %d", &x, &y) == 2)
+		  {
+		  	set_monster(x, y);
+		  }
 		}
                 fclose(file);
 	}
@@ -56,13 +60,16 @@ void save(char* filename)
 
             if (is_wall(x,y) == 1){
             fprintf(file, "WALL %d %d \n", x, y );
-				}
+	    }
 	    if (is_treasure(x,y) == 1){
-            fprintf(file, "TREASURE %d %d \n", x, y );
-            }
-            }
+	    fprintf(file, "TREASURE %d %d \n", x, y );
+	    }
+	    if (is_monster(x,y) == 1){
+	    fprintf(file, "MONSTER %d %d \n", x, y );
+	    }
+	}
     }
-   fprintf(file, "X %d\n", get_location_x()); 
+   fprintf(file, "X %d\n", get_location_x());
    fprintf(file, "Y %d\n", get_location_y());
 
    fclose(file);
