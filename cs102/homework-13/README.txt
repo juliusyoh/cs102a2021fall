@@ -1,1 +1,1 @@
-NOTE:PUT EXTRACREDIT 1 IN HERE
+Load the .txt file in this folder to load the Monster
