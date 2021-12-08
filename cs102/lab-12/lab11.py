@@ -10,20 +10,17 @@ def intersect (x1, y1, x2, y2, x3, y3, x4, y4):
     except:
         return None
 
-def hits(sx1, sy1, ex1, ey1, sx2, sy2, ex2, ey2):
-    print(sx1, sy1, ex1, ey1, sx2, sy2, ex2, ey2)
-    box1 = (sx1, sy1, ex1, ey1)
-    box2 = (sx2, sy2, ex2, ey2)
-    northvalue = sx1
-    return box1 and box2 and northvalue
-    
-
 def edges( sx, sy, ex, ey ):
     return ( ( sx, sy, ex, sy), (ex, sy, ex, ey), (ex, ey, sx, ey), (sx, ey, sx, sy) )
 
-
-def northedge(sx, sy, ex, ey):
-    print ( (sx, sy, ex, sy))
+def hits(sx1, sy1, ex1, ey1, sx2, sy2, ex2, ey2):
+    print(sx1, sy1, ex1, ey1, sx2, sy2, ex2, ey2)
+    box1 = edges( sx1, sy1, ex1, ey1) 
+    box2 = edges(sx2, sy2, ex2, ey2)
+    print(box1)
+    print(box2)
+    print((box1[0]))
+    return box1 and box2  
              
 def between( n, first, second ):
     if first <= n <= second:
@@ -41,10 +38,9 @@ def intersectAny( oneline, listoflines ):
     return False
     
 if __name__ == '__main__':
-    box1 = ( 1.5, 1, 9, 10 )
-    box2 = ( 0, 0, .5, .5 )
+    box1 = (1.5, 1, 9, 10)
+    box2 = (0, 0, .5, .5)
     hits( *(box1+box2) )
-    print( edges( *box1 ) )
-    print( edges( *box2 ) )
-    northedge( *(box1) )
+
+    
   
